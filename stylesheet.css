@@ -1,0 +1,20 @@
+.wheel {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.option {
+  position: absolute; /* each option is positioned relative to nearest ancestor (wheel) */
+  width: 50%; /* each option takes up 50% of the width of wheel container*/
+  height: 50%; /* 50% of the height of container */
+  transform-origin: 100% 100%;
+  /* Adjust angles for positioning options */
+  /* 360 / options */
+  text-align: center; /* Center the text within option*/
+  line-height: 150px; /* Center vertically in option box */
+  font-size: 16px; /* Adjust font size */
+}
